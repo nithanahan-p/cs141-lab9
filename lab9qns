@@ -1,0 +1,89 @@
+Q-1)*p3=S
+    *p3=T,P3=6940
+    *p1=S,P1=6940
+Q-2)D-*p=75
+Q-3)The variable declaired is of character type.But the pointer is of double type.A double type pointer cannot point a character.
+Q-6)int countEven(int arr[],int n){
+       int k=0;
+       for(int i=0;i<n;i++){
+         if(arr[i]%2==0){
+         k=k+1;}
+       return k;
+       }
+     int main(){
+       int arr[5]={1,2,4,6,9};
+       countEven(arr,5);
+return 0;
+}
+  
+Q-8)void myStrLen(char arr[])
+   {char *p;int n=0;
+    p=arr;
+    while(*p!='\0')
+    {n++;p++;}
+   return n;
+  } 
+  //n is the length of string
+Q-9)#include<iostream>
+using namespace std;
+int fstrchr(char a[],char c)
+  {
+	char *p;
+	p=a;
+	while(*p!='\0')
+	{
+		if(*p==c){
+		cout<<"true"<<endl;}
+	return 0;
+  }   
+         
+int main(){
+	char a[3]={'a','b','c'};
+	fstrchr(a,'c');
+} 
+Q-4)*ptr=4434
+  temp=A
+  temp=C
+  temp=B
+  temp=A
+  ptr=4435
+  temp=B
+  temp=C
+  ptr=4434
+  temp=B
+  temp=C
+  temp=C
+Q-5)cptr=s;
+  while(*cptr!='\0')
+  cptr++;
+  while(cptr!=s[0])
+   {if(*cptr!='\0')
+     cout<<*cptr;}
+  cout<<*cptr;
+  temp=C 
+
+Q-7)double *maximum(double a[],int size)
+  {double *d,max=0;
+   if(size==0)
+    {d=NULL;
+    return d;}
+   for(int i=0;i<size;i++)
+   { if(a[i]>max)
+    { max=a[i];d=&a[i]}}
+   return d;
+  }
+Q-10)void revstring(char a[])
+   {
+	char *p,*m;int i=0;
+	while(a[i]!='\0')
+	i++;
+	m=&a[i-1];
+	while(*m!=a[0])
+	{	
+		cout<<*m;
+		m--;
+	}
+	cout<<" "<<*m;
+	cout<<"\n";
+	return 0;
+   }
